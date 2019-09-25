@@ -64,4 +64,17 @@ public class UnitMaterialStore {
     public void setMaterialAmount(BigDecimal materialAmount) {
         this.materialAmount = materialAmount;
     }
+
+
+    public UnitMaterialStore() {
+        this.number = 0;
+        this.amount = BigDecimal.ZERO;
+        this.differenceAmount = BigDecimal.ZERO;
+        this.fee = BigDecimal.ZERO;
+        this.manualAmount = BigDecimal.ZERO;
+        this.materialAmount = BigDecimal.ZERO;
+    }
+
+
+
 }

@@ -47,7 +47,12 @@ public class MaterialStoreServiceImpl implements MaterialStoreService {
     }
 
     @Override
-    public boolean saveMaterialStock(StoreOperateType operateType, List<InsertMaterialStoreParam> insertMaterialStoreParamList) {
+    public List<MaterialStockEntity> queryMaterialStoreByCode(Date queryDate, String materialCode) {
+        return null;
+    }
+
+    @Override
+    public boolean saveMaterialStock(List<InsertMaterialStoreParam> insertMaterialStoreParamList) {
         //TODO
         return false;
 

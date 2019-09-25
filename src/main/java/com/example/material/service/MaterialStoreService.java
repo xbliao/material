@@ -23,7 +23,10 @@ public interface MaterialStoreService {
     public List<MaterialStockEntity> queryMaterialStore(Date queryDate);
 
 
-    public boolean saveMaterialStock(StoreOperateType operateType, List<InsertMaterialStoreParam> insertMaterialStoreParamList);
+    public List<MaterialStockEntity> queryMaterialStoreByCode(Date queryDate, String materialCode);
+
+
+    public boolean saveMaterialStock(List<InsertMaterialStoreParam> insertMaterialStoreParamList);
 
 
 }

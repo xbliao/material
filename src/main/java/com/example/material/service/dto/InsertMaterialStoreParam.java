@@ -1,6 +1,8 @@
 package com.example.material.service.dto;
 
-import com.example.material.service.MaterialStoreCalculate;
+
+import com.example.material.dal.constant.StoreOperateType;
+import com.example.material.service.MaterialStoreHandler;
 
 import java.math.BigDecimal;
 
@@ -12,7 +14,7 @@ import java.math.BigDecimal;
  */
 public class InsertMaterialStoreParam {
 
-
+    private String type;
     private String companyName;
     private String materialCode;
     private String materialDesc;
@@ -99,7 +101,8 @@ public class InsertMaterialStoreParam {
     }
 
 
-    public InsertMaterialStoreParam(MaterialStoreCalculate.MaterialInfo materialInfo, UnitMaterialStore unitMaterialStore) {
+    public InsertMaterialStoreParam(StoreOperateType operateType, MaterialStoreHandler.MaterialInfo materialInfo, UnitMaterialStore unitMaterialStore) {
+        this.type = operateType.getType();
         this.companyName = materialInfo.getCompanyName();
         this.materialCode = materialInfo.getMaterialCode();
         this.materialDesc = materialInfo.getMaterialDesc();
