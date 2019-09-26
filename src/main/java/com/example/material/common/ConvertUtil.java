@@ -18,6 +18,10 @@ public class ConvertUtil {
 
     private final static SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM");
 
+
+    /**
+     * 转换成 2019-10 格式
+     */
     public static String convertDateToStr(Date goalDate) {
         try {
             return sdf.format(goalDate);
@@ -55,7 +59,7 @@ public class ConvertUtil {
 
 
     /**
-     * 获取一个月的起点
+     * 两个日期间的月数
      */
     public static int betweenMonth(Date val1, Date val2) {
         Calendar calculateCalendar = DateUtils.toCalendar(val1);
@@ -68,7 +72,7 @@ public class ConvertUtil {
 
 
     /**
-     * 获取一个月的起点
+     * 增加plusCount个月
      */
     public static Date plusMonth(Date val1, int plusCount) {
         Calendar calendar = DateUtils.toCalendar(val1);

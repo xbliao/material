@@ -41,7 +41,6 @@ public class MaterialStoreHandler {
 
             boolean result = this.calculateAndSave(reCalculateDate);
             if (!result) {
-                System.out.println("error!!!!!!!!!!!!!!!!!!!!");
                 return false;
             }
             calculateStartMonth = ConvertUtil.plusMonth(calculateStartMonth, 1);
@@ -68,7 +67,6 @@ public class MaterialStoreHandler {
 
             boolean result = this.calculateAndSave(reCalculateDate, materialCode);
             if (!result) {
-                System.out.println("error!!!!!!!!!!!!!!!!!!!!");
                 return false;
             }
             calculateStartMonth = ConvertUtil.plusMonth(calculateStartMonth, 1);
