@@ -53,7 +53,7 @@ public class MaterialStoreServiceImpl implements MaterialStoreService {
 
     @Override
     public boolean saveMaterialStock(List<InsertMaterialStoreParam> insertMaterialStoreParamList) {
-        //TODO
+//        materialStockRepository.e()
         return false;
 
     }

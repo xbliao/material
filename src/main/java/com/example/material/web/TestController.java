@@ -1,6 +1,6 @@
 package com.example.material.web;
 
-import com.example.material.service.MaterialStoreService;
+import com.example.material.service.MaterialStoreHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 public class TestController {
 
     @Resource
-    private MaterialStoreService materialStoreService;
+    private MaterialStoreHandler materialStoreHandler;
 
 
     @RequestMapping("/sayHello")
@@ -27,7 +27,7 @@ public class TestController {
         return "Hello,SpringBoot!";
 
     }
-//
+
 //    @RequestMapping("/test")
 //
 //    public String test() {
